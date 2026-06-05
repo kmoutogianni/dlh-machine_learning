@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Module for Linear Algebra"""
 
+
 def matrix_shape(matrix):
     """calculates the shape of a matrix"""
     dims = []
