@@ -8,4 +8,4 @@ def matrix_shape(matrix):
         dims.append(dim)
         matrix = matrix[0]
 
-    print(dims)
+    return dims
