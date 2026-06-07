@@ -8,5 +8,5 @@ def np_elementwise(mat1, mat2):
     el1 = mat1 + mat2
     el2 = mat1 - mat2
     el3 = mat1 * mat2
-    el4 = mat1 // mat2
+    el4 = mat1 / mat2
     return el1, el2, el3, el4
