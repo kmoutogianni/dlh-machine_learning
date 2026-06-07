@@ -13,8 +13,8 @@ def add_matrices2D(mat1, mat2):
 
     new_matrix = []
 
-    new_row = []
     for i in range(len(mat1)):
+        new_row = []
         for j in range(len(mat1[0])):
             new_row.append(mat1[i][j] + mat2[i][j])
 
