@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Task 2 of advanced linear algebra"""
+"""Task 3 of advanced linear algebra"""
 
 
 def determinant(matrix):
@@ -40,8 +40,8 @@ def determinant(matrix):
     return det
 
 
-def cofactor(matrix):
-    """calculates the cofactor matrix of a matrix"""
+def adjugate(matrix):
+    """calculates the adjugate matrix of a matrix"""
 
     # initial checks
     if type(matrix) is not list or matrix == []:
@@ -59,18 +59,18 @@ def cofactor(matrix):
         return [[1]]
 
     # all other matrices
-    cofactor_matrix = []
-    for i in range(length):          # for each row i
-        cofactor_row = []     # create respective cofactor matrix row
-        for j in range(length):      # for each column j
+    adjugate_matrix = []
+    for j in range(length):          # for each column j
+        adjugate_row = []     # create respective adjugate matrix row
+        for i in range(length):      # for each row i
             # create minor matrix, and append the cofactor value to the row
             minor_matrix = []
             for k in range(length):
                 if k != i:          # leave out row i
                     # leave out column j
                     minor_matrix.append(matrix[k][:j] + matrix[k][j+1:])
-            cofactor_row.append((-1) ** (i+j) * determinant(minor_matrix))
+            adjugate_row.append((-1) ** (i+j) * determinant(minor_matrix))
 
-        cofactor_matrix.append(cofactor_row)
+        adjugate_matrix.append(adjugate_row)
 
-    return cofactor_matrix
+    return adjugate_matrix
