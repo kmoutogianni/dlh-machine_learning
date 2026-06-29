@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Task 5 of advanced linear algebra"""
-
 import numpy as np
+
 
 def definiteness(matrix):
     """calculates the definiteness of a matrix"""
