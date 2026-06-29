@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Task 1 of advanced linear algebra"""
-
+from determinant import determinant
 
 def minor(matrix):
     """calculates the minor matrix of a matrix"""
