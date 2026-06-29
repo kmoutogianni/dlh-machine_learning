@@ -9,7 +9,7 @@ def determinant(matrix):
     if type(matrix) is not list or matrix == []:
         raise TypeError("matrix must be a list of lists")
 
-    # empty matrix
+    # 0x0 matrix
     if matrix == [[]]:
         return 1
 
