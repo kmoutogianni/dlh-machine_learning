@@ -11,7 +11,7 @@ def poly_derivative(poly):
     if len(poly) == 0:
         return None
     for element in poly:
-        if type(element) is not int or element < 0:
+        if type(element) is not int:
             return None
 
     # if the derivative is 0
