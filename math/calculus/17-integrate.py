@@ -11,14 +11,13 @@ def poly_integral(poly, C=0):
         return None
     if len(poly) == 0:
         return None
-    if poly == [0]:
-        return None
 
     new_poly = []
     new_poly.append(C)
-    for i in range(1, len(poly)+1):
-        c = poly[i-1] / i
-        if c % 1 == 0:
-            c = int(c)
-        new_poly.append(c)
+    if poly != [0]:
+        for i in range(1, len(poly)+1):
+            c = poly[i-1] / i
+            if c % 1 == 0:
+                c = int(c)
+            new_poly.append(c)
     return new_poly
