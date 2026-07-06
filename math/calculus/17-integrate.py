@@ -15,5 +15,8 @@ def poly_integral(poly, C=0):
     new_poly = []
     new_poly.append(C)
     for i in range(1, len(poly)+1):
-        new_poly.append(poly[i-1] / i)
+        c = poly[i-1] / i
+        if c % 1 == 0:
+            c = int(c)
+        new_poly.append(c)
     return new_poly
