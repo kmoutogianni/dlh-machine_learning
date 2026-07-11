@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """plotting exercise 0"""
-#%%
+# %%
 import numpy as np
 import matplotlib.pyplot as plt
 
-#%%
+
+# %%
 def line():
     """plots y as a line graph"""
 
@@ -12,5 +13,6 @@ def line():
     plt.figure(figsize=(6.4, 4.8))
 
     # your code here
+    plt.xlim(0, 10)
     plt.plot(y, 'r-')
     plt.show()
