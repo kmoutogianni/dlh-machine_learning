@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""plotting exercise 0"""
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -12,5 +13,6 @@ def line():
     # your code here
     plt.plot(y, 'r-')
     plt.show()
+
 
 line()
