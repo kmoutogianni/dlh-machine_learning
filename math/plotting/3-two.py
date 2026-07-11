@@ -26,7 +26,5 @@ def two():
     plt.plot(x, y1, 'r--', label='C-14')
     plt.plot(x, y2, 'g-', label='Ra-226')
 
-    plt.legend(loc = 'upper right')
+    plt.legend(loc='upper right')
     plt.show()
-    
-two()
