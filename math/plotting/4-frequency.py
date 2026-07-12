@@ -13,9 +13,9 @@ def frequency():
     plt.figure(figsize=(6.4, 4.8))
 
     # your code here
-    plt.xlim(0, 100)
-    plt.yticks(np.arange(0, 31, 5))
-    plt.xticks(np.arange(0, 101, 10))
+    # plt.xlim(0, 100)
+    # plt.yticks(np.arange(0, 31, 5))
+    # plt.xticks(np.arange(0, 101, 10))
     plt.title('Project A')
     plt.xlabel('Grades')
     plt.ylabel('Number of Students')
