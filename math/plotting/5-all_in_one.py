@@ -84,8 +84,5 @@ def all_in_one():
     plt.ylabel('Number of Students', fontsize='x-small')
     plt.hist(student_grades, bins=np.arange(0, 101, 10), edgecolor='black')
 
+    plt.tight_layout()
     plt.show()
-
-all_in_one()
-
-# %%
