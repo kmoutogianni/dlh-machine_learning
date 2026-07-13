@@ -34,15 +34,14 @@ def all_in_one():
 
     # your code here
 
-    fig = plt.figure(figsize=(6.4, 4.8))
-    fig.suptitle("All in One")
+    plt.figure(figsize=(6.4, 4.8))
+    plt.suptitle("All in One")
 
     # first subplot
     plt.subplot(3, 2, 1)
 
     plt.xlim(0, 10)
     plt.plot(y0, 'r-')
-    plt.show()
 
     # second subplot
     plt.subplot(3, 2, 2)
@@ -71,14 +70,15 @@ def all_in_one():
     plt.xlim(0, 20000)
     plt.ylim(0, 1)
 
-    plt.plot(x3, y31, 'r--', label='C-14', fontsize='x-small')
-    plt.plot(x3, y32, 'g-', label='Ra-226', fontsize='x-small')
+    plt.plot(x3, y31, 'r--', label='C-14')
+    plt.plot(x3, y32, 'g-', label='Ra-226')
 
     plt.legend(loc='upper right', fontsize='x-small')
 
     # fifth subplot
     plt.subplot2grid((3, 2), (2, 0), colspan=2)
 
+    plt.ylim(0, 30)
     plt.title('Project A', fontsize='x-small')
     plt.xlabel('Grades', fontsize='x-small')
     plt.ylabel('Number of Students', fontsize='x-small')
@@ -87,3 +87,5 @@ def all_in_one():
     plt.show()
 
 all_in_one()
+
+# %%
