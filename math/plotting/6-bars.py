@@ -40,7 +40,6 @@ def bars():
             color="#ffe5b4",
             label="peaches")
 
-    plt.xticks([0, 1, 2])
     plt.xticks(person, ["Farrah", "Fred", "Felicia"])
     plt.ylim(0, 80)
     plt.yticks(np.arange(0, 81, 10))
