@@ -40,7 +40,7 @@ def bars():
             color="#ffe5b4",
             label="peaches")
 
-    plt.xticks(["Farrah", "Fred", "Felicia"])
+    plt.xticks(person, ["Farrah", "Fred", "Felicia"])
     plt.ylim(0, 80)
     plt.yticks(np.arange(0, 81, 10))
     plt.title('Number of Fruit per Person')
@@ -48,8 +48,3 @@ def bars():
 
     plt.legend()
     plt.show()
-
-
-bars()
-
-# %%
