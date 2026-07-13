@@ -11,8 +11,8 @@ def bars():
     plt.figure(figsize=(6.4, 4.8))
 
     # your code here
-    person = [0, 1, 2]
-
+    person = np.arange(3)
+    
     plt.bar(person,
             fruit[0],
             width=0.5,
