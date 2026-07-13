@@ -12,7 +12,7 @@ def bars():
 
     # your code here
     person = np.arange(3)
-    
+
     plt.bar(person,
             fruit[0],
             width=0.5,
