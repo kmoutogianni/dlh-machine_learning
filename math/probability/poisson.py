@@ -47,7 +47,7 @@ class Poisson:
             return 0
 
         P = 0
-        for i in range(1, k+1):
+        for i in range(0, k+1):
             factorial_i = 1
             for j in range(1, i+1):
                 factorial_i = factorial_i * i
