@@ -5,8 +5,6 @@
 class Poisson:
     """class representing a poisson distribution"""
 
-    e = 2.7182818285
-
     def __init__(self, data=None, lambtha=1.):
         """initiates with lambtha value"""
         if data is None:
@@ -24,6 +22,8 @@ class Poisson:
     def pmf(self, k):
         """Calculates the value of the PMF for k number of successes"""
 
+        e = 2.7182818285
+
         if type(k) is not int:
             k = int(k)
         if k < 0:
@@ -38,6 +38,8 @@ class Poisson:
 
     def cdf(self, k):
         """Calculates the value of the CDF for k number of successes"""
+
+        e = 2.7182818285
 
         if type(k) is not int:
             k = int(k)
