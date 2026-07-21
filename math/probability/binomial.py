@@ -29,7 +29,7 @@ class Binomial:
 
             var = 0
             for x in data:
-                var += (x - self.mean)**2
+                var += (x - mean)**2
             var = var / len(data)
 
             p = 1 - variance / mean
