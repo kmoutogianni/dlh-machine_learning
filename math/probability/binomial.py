@@ -32,7 +32,7 @@ class Binomial:
                 var += (x - mean)**2
             var = var / len(data)
 
-            p = 1 - variance / mean
+            p = 1 - var / mean
             n = mean / p
             n = round(n)
 
