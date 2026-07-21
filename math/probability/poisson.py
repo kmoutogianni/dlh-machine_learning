@@ -46,5 +46,5 @@ class Poisson:
 
         P = 0
         for i in range(0, k+1):
-            P = P + pmf(i)
+            P = P + self.pmf(i)
         return P
