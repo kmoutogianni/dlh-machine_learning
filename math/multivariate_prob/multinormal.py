@@ -16,7 +16,6 @@ class MultiNormal:
             raise ValueError("data must contain multiple data points")
 
         mean = np.mean(data, axis=1, keepdims=True)
-        print("mean =", mean)
 
         data_centered = data - mean
 
