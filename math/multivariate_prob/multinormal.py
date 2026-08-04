@@ -12,8 +12,6 @@ class MultiNormal:
         if type(data) is not np.ndarray or data.ndim != 2:
             raise TypeError("data must be a 2D numpy.ndarray")
         d, n = data.shape
-        print(d)
-        print(n)
         if n < 2:
             raise ValueError("data must contain multiple data points")
 
@@ -21,7 +19,6 @@ class MultiNormal:
         print("mean =", mean)
 
         data_centered = data - mean
-        print(data_centered)
 
         cov = (data_centered @ data_centered.T) / (n - 1)
 
