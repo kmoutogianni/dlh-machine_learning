@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 import numpy as np
+"""module 0"""
 
 
 def factorial(k):
+    """calculates the factorial of k"""
     factorial_k = 1
     for i in range(1, k+1):
         factorial_k = factorial_k * i
