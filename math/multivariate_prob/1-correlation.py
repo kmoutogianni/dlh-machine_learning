@@ -7,7 +7,7 @@ def correlation(C):
     """calculates a correlation matrix, given a covariance matrix"""
 
     if type(C) is not np.ndarray:
-        raise TypeError("X must be a numpy.ndarray")
+        raise TypeError("C must be a numpy.ndarray")
     if X.ndim != 2 or X.shape[0] != X.shape[1]:
         raise ValueError("C must be a 2D square matrix")
 
