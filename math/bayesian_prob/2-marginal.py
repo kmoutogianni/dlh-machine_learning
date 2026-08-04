@@ -13,7 +13,7 @@ def factorial(k):
 
 
 def marginal(x, n, P, Pr):
-    """calculates the intersection of obtaining this data
+    """calculates the marginal probability of obtaining this data
     with the various hypothetical probabilities"""
 
     if type(n) is not int or n <= 0:
@@ -36,6 +36,7 @@ def marginal(x, n, P, Pr):
         raise ValueError("Pr must sum to 1")
 
     n_choose_x = (factorial(n) // (factorial(x) * factorial(n-x)))
-    L = n_choose_x * P**x * (1-P)**(n-x)  # likelihood
-    intersection_array = L * Pr
-    return np.sum(intersection_array)
+    likelihood = n_choose_x * P**x * (1-P)**(n-x) 
+    intersection_array = likelyhood * Pr
+    marginal_prob = np.sum(intersection_array)
+    return marginal_prob
