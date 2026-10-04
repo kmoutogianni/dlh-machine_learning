@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """module 11"""
-index = __import__('10-index').index
 
 
 def concat(df1, df2):
@@ -12,6 +11,7 @@ def concat(df1, df2):
     Adds keys to the concatenated data, labeling the rows from df2
     as bitstamp and the rows from df1 as coinbase.
     """
+    index = __import__('10-index').index
 
     df1 = index(df1)
     df2 = index(df2)
