@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """modeule 13"""
-import pandas as pd
 
 
 def analyze(df):
