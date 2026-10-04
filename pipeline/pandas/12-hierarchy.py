@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """modeule 12"""
+import pandas as pd
 
 def hierarchy(df1, df2):
     """builds on the the previous one, and rearranges the indexes"""
