@@ -2,6 +2,7 @@
 """modeule 12"""
 import pandas as pd
 
+
 def hierarchy(df1, df2):
     """builds on the the previous one, and rearranges the indexes"""
     index = __import__('10-index').index
