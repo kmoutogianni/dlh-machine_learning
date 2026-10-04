@@ -11,6 +11,7 @@ df = df.drop(columns=['Weighted_Price'])
 df = df.rename(columns={'Timestamp': 'Date'})
 df['Date'] = pd.to_datetime(df['Date'], unit='s')
 df = df.set_index('Date')
+
 df['Close'] = df['Close'].ffill()
 df['High'] = df['High'].fillna(df['Close'])
 df['Low'] = df['Low'].fillna(df['Close'])
